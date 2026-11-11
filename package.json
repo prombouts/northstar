@@ -1,0 +1,21 @@
+{
+  "name": "northstar-flight-radar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "express": "^5.1.0",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-leaflet": "^5.0.0",
+    "vite": "^6.1.0"
+  }
+}
