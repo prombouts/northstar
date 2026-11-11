@@ -17,7 +17,7 @@ Run `npm test` to check the aircraft feed proxy.
 
 ## Deployment
 
-The site is hosted at [northstar](https://lemon-mushroom-074ef3403.5.azurestaticapps.net/) on Azure Static Web Apps. A GitHub Actions workflow builds and deploys the site and its managed Azure Functions API on every push to `main`; it can also be started manually. The workflow uses the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN` for deployment. The API proxies aircraft feed requests because the provider does not allow cross-origin browser requests.
+The site is hosted at [northstar](https://lemon-mushroom-074ef3403.5.azurestaticapps.net/) on Azure Static Web Apps. A GitHub Actions workflow builds and deploys the site and its managed Azure Functions API on every push to `main`; it can also be started manually. The workflow uses the repository secret `AZURE_STATIC_WEB_APPS_API_TOKEN` for deployment. The API proxies aircraft feed requests because the provider does not allow cross-origin browser requests. The Static Web Apps configuration allows the site origin to be sent as a referrer to OpenStreetMap, as required by its [tile usage policy](https://operations.osmfoundation.org/policies/tiles/).
 
 Pan and zoom to explore another area. The aircraft feed refreshes every 15 seconds and the search matches callsigns, registrations, aircraft types, and ICAO identifiers. Select an aircraft on the map or in the list to inspect its available data. The list shows up to 100 matches; search narrows both the list and the map.
 
